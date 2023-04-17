@@ -1,0 +1,33 @@
+.root {
+  @apply flex items-center no-underline;
+}
+
+.root:hover {
+  @apply opacity-50;
+}
+
+.icon {
+  @apply m-0 h-6 w-6;
+}
+
+.left {
+  @apply mr-2;
+}
+
+.right {
+  @apply ml-2;
+}
+
+@screen md {
+  .root {
+    @apply text-lg;
+  }
+
+  .left {
+    @apply mr-4;
+  }
+
+  .right {
+    @apply ml-4;
+  }
+}

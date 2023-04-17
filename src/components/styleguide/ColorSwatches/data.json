@@ -1,0 +1,49 @@
+{
+  "colors": [
+    {
+      "name": "Accents",
+      "swatches": [
+        {
+          "code": "bg-accent-0",
+          "hex": "#fff"
+        },
+        {
+          "code": "bg-accent-1",
+          "hex": "#fafafa"
+        },
+        {
+          "code": "bg-accent-2",
+          "hex": "#eaeaea"
+        },
+        {
+          "code": "bg-accent-3",
+          "hex": "#bebebe"
+        },
+        {
+          "code": "bg-accent-4",
+          "hex": "#888888"
+        },
+        {
+          "code": "bg-accent-5",
+          "hex": "#666666"
+        },
+        {
+          "code": "bg-accent-6",
+          "hex": "#444444"
+        },
+        {
+          "code": "bg-accent-7",
+          "hex": "#222222"
+        },
+        {
+          "code": "bg-accent-8",
+          "hex": "#111111"
+        },
+        {
+          "code": "bg-accent-9",
+          "hex": "#000"
+        }
+      ]
+    }
+  ]
+}

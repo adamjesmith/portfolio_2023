@@ -1,0 +1,47 @@
+.root {
+  @apply grid grid-cols-1 gap-16;
+}
+
+.block {
+  @apply grid w-full grid-cols-2 gap-6 xs:grid-cols-3;
+}
+
+.title {
+  @apply col-span-full mb-0 font-bold;
+}
+
+.container {
+  @apply w-36 flex-col items-center justify-center;
+}
+
+.swatch {
+  @apply z-0 mb-8 flex h-36 w-full rounded-3xl shadow-xl;
+}
+
+.refs {
+  @apply z-10 flex flex-col items-center justify-center rounded-lg p-2 text-sm;
+}
+
+.hex {
+  @apply mb-2 font-bold uppercase;
+}
+
+.code {
+  @apply text-center text-xs;
+}
+
+@screen md {
+  .block {
+    @apply grid-cols-4;
+  }
+}
+@screen lg {
+  .block {
+    @apply grid-cols-5;
+  }
+}
+@screen xl {
+  .block {
+    @apply grid-cols-6;
+  }
+}

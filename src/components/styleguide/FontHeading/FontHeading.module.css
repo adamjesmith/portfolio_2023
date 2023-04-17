@@ -1,0 +1,50 @@
+.row {
+  @apply pb-6 mb-8 border-b border-accent-2;
+}
+
+.info {
+  @apply flex flex-col text-sm;
+}
+
+.fonts {
+  @apply mb-2;
+}
+
+.sizes {
+  @apply flex;
+}
+
+.size {
+  @apply pr-2;
+
+  &:nth-of-type(even) {
+    @apply text-accent-3 line-through;
+  }
+}
+
+.name {
+  @apply font-bold mb-2;
+}
+
+@screen lg {
+  .row {
+    @apply flex flex-row-reverse items-start justify-end;
+  }
+
+  .example {
+    @apply mb-0;
+  }
+
+  .info {
+    @apply w-48 mr-12;
+  }
+
+  .size {
+    &:nth-of-type(odd) {
+      @apply text-accent-3 line-through;
+    }
+    &:nth-of-type(even) {
+      @apply text-black no-underline;
+    }
+  }
+}

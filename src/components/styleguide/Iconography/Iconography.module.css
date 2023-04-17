@@ -1,0 +1,40 @@
+.root {
+}
+
+.row {
+  @apply grid gap-2 grid-cols-2;
+}
+
+.contain {
+  @apply flex flex-col items-center justify-center p-4;
+}
+
+.icon {
+  @apply w-16 h-16;
+}
+
+.name {
+  @apply text-sm mt-6 font-bold;
+}
+
+@screen xs {
+  .row {
+    @apply grid-cols-3;
+  }
+}
+@screen md {
+  .row {
+    @apply grid-cols-4;
+  }
+}
+@screen lg {
+  .row {
+    @apply grid-cols-5;
+  }
+}
+
+@screen xl {
+  .row {
+    @apply grid-cols-6;
+  }
+}

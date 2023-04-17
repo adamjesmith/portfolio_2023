@@ -1,0 +1,14 @@
+.root {
+}
+
+.title {
+  @apply font-bold mb-0;
+}
+
+.hr {
+  @apply mt-4 mb-8 w-full;
+}
+
+.intro {
+  @apply mt-4;
+}

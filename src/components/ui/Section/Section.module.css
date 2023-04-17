@@ -1,0 +1,23 @@
+.root {
+  @apply py-16;
+}
+
+.root.noPaddingBottom {
+  @apply pb-0;
+}
+
+.root.noPaddingTop {
+  @apply pt-0;
+}
+
+@screen lg {
+  .root {
+    @apply py-20;
+  }
+}
+
+@screen xl {
+  .root {
+    @apply py-32;
+  }
+}

@@ -1,0 +1,53 @@
+.root {
+}
+
+.root .preTitle {
+  @apply mb-2 uppercase;
+}
+
+.root .title {
+  @apply mt-0 mb-12 uppercase;
+  max-width: 700px;
+}
+
+.contain {
+  @apply flex flex-col-reverse;
+}
+
+.text {
+  @apply mb-0;
+  max-width: 700px;
+}
+
+.link {
+  @apply mt-6;
+}
+
+.aside {
+}
+
+.list {
+  @apply ml-0 mb-12 list-none p-0;
+}
+
+.listTitle {
+  @apply mb-2 uppercase;
+}
+
+.listItem {
+  @apply text-accent-3;
+}
+
+@screen lg {
+  .contain {
+    @apply flex-row justify-between;
+  }
+
+  .text {
+    @apply text-lg;
+  }
+
+  .listItem {
+    @apply text-lg;
+  }
+}

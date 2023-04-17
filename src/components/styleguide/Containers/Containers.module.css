@@ -1,0 +1,28 @@
+.title {
+  @apply mb-0;
+}
+
+.example {
+  @apply flex flex-col items-center py-3 border-red border-2 mb-12;
+}
+
+.body {
+  @apply py-3 border-red border-2 mb-12;
+}
+
+.title {
+}
+
+@screen md {
+  .text {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+@screen xl {
+  .text {
+    column-count: 3;
+    column-gap: 2rem;
+  }
+}

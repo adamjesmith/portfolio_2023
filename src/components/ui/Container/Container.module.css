@@ -1,0 +1,31 @@
+.root {
+  @apply mx-auto w-full max-w-screen-xl px-6;
+}
+
+.clean {
+  @apply p-0;
+}
+
+.noMaxWidth {
+  @apply max-w-none;
+}
+
+.text {
+  @apply max-w-screen-lg;
+}
+
+@screen md {
+  .root {
+    @apply px-12;
+  }
+
+  .clean {
+    @apply p-0;
+  }
+}
+
+@screen xl {
+  .text {
+    @apply px-0;
+  }
+}

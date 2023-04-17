@@ -1,0 +1,15 @@
+.root {
+  @apply drop-shadow-lg;
+}
+
+@screen lg {
+  .root {
+    @apply drop-shadow-xl;
+  }
+}
+
+@screen xl {
+  .root {
+    @apply drop-shadow-2xl;
+  }
+}

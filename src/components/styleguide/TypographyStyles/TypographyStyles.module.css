@@ -1,0 +1,61 @@
+.root {
+  @apply mb-4;
+}
+
+.name {
+  @apply mb-2 text-black;
+}
+
+.usage {
+  @apply text-blue text-sm;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.title {
+  @apply font-bold col-span-full mb-8;
+}
+
+.contain {
+  @apply flex flex-col mb-6 pb-6 border-b border-accent-2;
+}
+
+.info {
+  @apply flex flex-col w-48 text-sm text-accent-3;
+}
+
+.example {
+  @apply mb-4;
+}
+
+.font {
+  @apply my-0;
+
+  &:nth-of-type(even) {
+    @apply uppercase mt-4;
+  }
+}
+
+.name {
+  @apply font-bold;
+}
+
+.weight {
+  @apply mb-2;
+}
+
+@screen md {
+  .contain {
+    @apply flex flex-row-reverse items-start justify-end;
+  }
+
+  .example {
+    @apply mb-0;
+  }
+
+  .info {
+    @apply mr-12;
+  }
+}

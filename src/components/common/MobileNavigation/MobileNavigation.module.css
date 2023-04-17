@@ -1,0 +1,62 @@
+.root {
+}
+
+.list {
+  @apply fixed top-0 left-0 z-10 m-0 hidden h-full w-full list-none  bg-accent-7 px-8 pt-24;
+}
+
+.item {
+  @apply text-left;
+}
+
+.link {
+  @apply text-current no-underline;
+  line-height: 40px;
+}
+
+.burger {
+  @apply absolute z-20 flex h-12 w-12 items-center justify-center text-current;
+  margin-top: -24px;
+  right: 20px;
+  top: 50%;
+}
+
+.lines {
+  @apply flex flex-col justify-between;
+  height: 10px;
+  width: 20px;
+}
+
+.line {
+  @apply h-1 w-6 bg-current;
+  height: 1px;
+  width: 20px;
+}
+
+.root.open {
+  @apply text-accent-0;
+}
+
+.open .list {
+  @apply flex flex-col;
+}
+
+.open .line:nth-of-type(1) {
+  @apply origin-top-left;
+  margin-top: -2px;
+  margin-left: 1px;
+  transform: rotate(42deg);
+}
+
+.open .line:nth-of-type(2) {
+  @apply origin-bottom-left;
+  margin-bottom: -2px;
+  margin-left: 1px;
+  transform: rotate(-42deg);
+}
+
+@screen lg {
+  .root {
+    @apply hidden;
+  }
+}

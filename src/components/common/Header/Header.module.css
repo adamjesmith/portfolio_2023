@@ -1,0 +1,59 @@
+.root {
+  @apply top-0 z-50 w-full text-accent-8;
+}
+
+.root.project {
+  @apply text-accent-0;
+}
+
+.container {
+  @apply relative flex w-full items-center justify-between p-8 transition duration-500;
+}
+
+.home {
+  @apply z-20 no-underline;
+}
+
+.back {
+  @apply z-20;
+}
+
+@media (max-width: 1023px) {
+  .root {
+    @apply fixed transition duration-500;
+  }
+
+  .container {
+    @apply transition-all duration-500;
+  }
+
+  .burgerOpen .home {
+    @apply text-accent-0;
+  }
+
+  .burgerOpen .back {
+    @apply text-accent-0;
+  }
+
+  .scrolled.root {
+    @apply bg-accent-0 text-accent-8 drop-shadow-md;
+  }
+
+  .scrolled .container {
+    @apply bg-accent-0 py-6 text-accent-8;
+  }
+}
+
+@screen lg {
+  .root {
+    @apply absolute;
+  }
+
+  .container {
+    @apply p-16 pb-0;
+  }
+
+  .home {
+    @apply text-lg;
+  }
+}

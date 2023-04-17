@@ -1,0 +1,44 @@
+.root {
+  @apply fixed bottom-0 flex w-full justify-end px-8 pb-8 text-accent-3;
+}
+
+.title {
+  @apply m-0 hidden;
+}
+
+.list {
+  @apply m-0 list-none p-0 text-right;
+}
+
+.link {
+  @apply no-underline;
+}
+
+@media (max-width: 1023px) {
+  .link {
+    @apply leading-8;
+  }
+
+  .root {
+    @apply hidden;
+  }
+}
+
+@screen lg {
+  .root {
+    @apply items-end px-16 pb-16 text-lg;
+  }
+
+  .title {
+    @apply absolute block origin-bottom-left -rotate-90;
+    left: 90px;
+  }
+
+  .list {
+    @apply flex;
+  }
+
+  .item {
+    @apply ml-8;
+  }
+}

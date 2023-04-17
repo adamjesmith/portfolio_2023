@@ -1,0 +1,62 @@
+.root {
+  @apply relative overflow-hidden pt-8;
+}
+
+.title {
+  @apply mb-2 uppercase;
+  line-height: 1;
+}
+
+.text {
+  @apply pb-8;
+}
+
+.image {
+  @apply absolute top-6 flex w-full;
+  right: -50%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    @apply px-0;
+  }
+}
+
+@screen md {
+  .root {
+    @apply pt-16;
+  }
+
+  .textContainer {
+    @apply relative;
+  }
+
+  .image {
+    @apply top-0 right-12;
+    width: 60%;
+  }
+
+  .text {
+    @apply pb-6;
+  }
+}
+
+@screen lg {
+  .root {
+    @apply pt-32;
+  }
+
+  .title {
+    @apply text-4xl;
+  }
+
+  .text {
+    @apply pb-8;
+  }
+}
+
+@screen xl {
+  .image {
+    @apply right-0;
+  }
+}
